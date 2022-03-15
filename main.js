@@ -85,15 +85,26 @@ let Fgrad = Number(prompt('Задача №3 Конвертация единиц
 let Fgrad1 = Cgrad * 1.8 + 32;
 let Cgrad1 = (Fgrad - 32) / 1.8;
 
-console.log(Cgrad + "\xB0С", "соответствует", Fgrad1 + "\xB0F");
-console.log(Fgrad + "\xB0F", "соответствует", Cgrad1 + "\xB0C");
+console.log(`${Cgrad} \xB0С соответствует ${Fgrad1} \xB0F`);
+console.log(`${Fgrad}\xB0F соответствует ${Cgrad1} \xB0C`);
 
 //Задание 4
 console.log("Задание 4");
 
 let year = Number(prompt('Задача №4 Високосный год' + '\nВведите год'));
 
-year % 4 == 0 ? alert('true') : alert('false');
+if (year % 4 == 0){
+    console.log(`${year} - високосный`)
+    alert(true);
+}
+else if (year % 100 != 0){
+    console.log(`${year} - високосный`)
+    alert(true);
+}
+else {
+    console.log(`${year} - не високосный`)
+    alert(fasle);
+}
 
 //Задание 5
 console.log("Задание 5");
@@ -110,10 +121,10 @@ console.log("Задание 6");
 
 let NumSheep = Number(prompt('Задача №6 Считаем овец' + '\nВведите число овец'));
 
-let i;
-let k;
-for (i = 1; i <= NumSheep; i++) {
-    k += i + " овечка...";
+let k = "";
+for (let i = 1; i <= NumSheep; i++) {
+    k += `${i} овечка...`;
+
 }
 
 console.log(k);
