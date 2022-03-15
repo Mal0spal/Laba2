@@ -85,8 +85,8 @@ let Fgrad = Number(prompt('Задача №3 Конвертация единиц
 let Fgrad1 = Cgrad * 1.8 + 32;
 let Cgrad1 = (Fgrad - 32) / 1.8;
 
-console.log(`${Cgrad} \xB0С соответствует ${Fgrad1} \xB0F`);
-console.log(`${Fgrad}\xB0F соответствует ${Cgrad1} \xB0C`);
+console.log(`${Cgrad}\xB0С соответствует ${Fgrad1}\xB0F`);
+console.log(`${Fgrad}\xB0F соответствует ${Cgrad1}\xB0C`);
 
 //Задание 4
 console.log("Задание 4");
