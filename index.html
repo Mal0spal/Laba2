@@ -10,25 +10,51 @@
 
 <body>
     <h1>
-        Бражников Иван Евгеньевич - Лабораторная работа №1
+        Бражников Иван Евгеньевич - Лабораторные работы
     </h1>
 
-  
-   
+
+    <!--
     <script src="main.js">
 
 
     </script>
     
-  <!--
+ -->
 
     <script src="main2.js">
 
 
     </script>
 
--->
 
+    <div>
+        <img class="slideP" style="height:600px" src="img/Венера.png">
+        <img class="slideP" style="height:600px" src="img/Плутон.jpg">
+
+    </div>
+
+    <button onclick="NextOrPreviousSlide(-1)">Назад</button>
+    <button onclick="NextOrPreviousSlide(+1)">Вперед</button>
+
+    <script>
+        let SlideID = document.querySelectorAll(".slideP");
+        SlideID[1].style.display = 'none';
+
+        function NextOrPreviousSlide(changeId) {
+
+            if (changeId == +1) {
+                SlideID[indslide + 1].style.display = 'block';
+                SlideID[0].style.display = 'none';
+            }
+
+            if (changeId == -1) {
+                SlideID[0].style.display = 'block';
+                SlideID[0 + 1].style.display = 'none';
+            }
+        }
+        let indslide = 0;
+    </script>
 
 </body>
 

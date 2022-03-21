@@ -88,5 +88,3 @@ console.log("Список свойств: " + Object.keys(student));
 console.log(`Студент ${student.last_name} ${student.first_name} учится в ${student.group} группе`);
 
 
-//Задание 5
-
